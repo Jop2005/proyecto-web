@@ -1,0 +1,44 @@
+# DEPENDENCIAS - NUNCA subir node_modules
+node_modules/
+*/node_modules/
+
+# ARCHIVOS DE ENTORNO - información sensible
+.env
+.env.local
+.env.production
+.env.development
+
+# LOGS
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# CARPETAS DE BUILD
+dist/
+build/
+.output/
+
+# SISTEMA
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# IDE/EDITORES
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# BASE DE DATOS (si usas SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# ARCHIVOS DE SISTEMA DE WINDOWS
+Desktop.ini
+
+# CACHE
+.cache/
+.temp/
