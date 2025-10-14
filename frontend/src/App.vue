@@ -8,20 +8,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
+// Importaciones - Composition API (script setup)
 import Navbar from '@/components/Common/Navbar.vue'
 import Footer from '@/components/Common/Footer.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Navbar,
-    Footer
-  }
-}
 </script>
 
-<style>
+<style scoped>
 #app {
   min-height: 100vh;
   display: flex;

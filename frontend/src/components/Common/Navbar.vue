@@ -15,22 +15,12 @@
         </ul>
         
         <ul class="navbar-nav">
-          <template v-if="auth.isAuthenticated">
-            <li class="nav-item">
-              <router-link to="/dashboard" class="nav-link">Dashboard</router-link>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" @click="handleLogout">Cerrar Sesión ({{ auth.userName }})</a>
-            </li>
-          </template>
-          <template v-else>
-            <li class="nav-item">
-              <router-link to="/login" class="nav-link">Login</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/register" class="nav-link">Registro</router-link>
-            </li>
-          </template>
+          <li class="nav-item">
+            <router-link to="/login" class="nav-link">Login</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/register" class="nav-link">Registro</router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -38,11 +28,5 @@
 </template>
 
 <script setup>
-import { useAuthStore } from '@/stores/auth'
-
-const auth = useAuthStore()
-
-const handleLogout = () => {
-  auth.logout()
-}
+// Composition API - más simple
 </script>
